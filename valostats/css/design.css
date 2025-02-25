@@ -1,0 +1,11 @@
+/* Highlight sidebar on hover */
+.nav-sidebar .nav-item:hover>.nav-link {
+    background-color: #1e282c;
+    color: #ffffff !important;
+}
+
+/* Active state style */
+.nav-sidebar .nav-item .nav-link.active {
+    background-color: #007bff;
+    color: white !important;
+}
