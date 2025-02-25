@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valorant Dashboard</title>
     <!-- AdminLTE & Bootstrap -->
+    <link rel="icon" href="img/valo.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font/css/all.css">
     <link rel="stylesheet" href="css/dataTables.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="css/design.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <ul class="navbar-nav">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light"
+            style="position: sticky; top: 0; z-index: 1030; width: 100%;">
+            <ul class=" navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="index.php" class="nav-link">Home</a>
                 </li>
             </ul>
         </nav>
@@ -30,26 +33,27 @@
         <!-- Sidebar -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <a href="#" class="brand-link">
+                <img src="img/valo.png" style="opacity: .8; width: 40px; height: 25px;">
                 <span class="brand-text font-weight-light">Valorant Dashboard</span>
             </a>
             <div class="sidebar">
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column">
+                    <ul class="nav nav-pills nav-sidebar flex-column" id="sidebar">
                         <li class="nav-item">
-                            <a href="index.php" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <a href="index.php" class="nav-link">
+                                <i class="nav-icon fas fa-dollar-sign"></i>
                                 <p> Price </p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="dmg.php" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
+                                <i class="nav-icon fas fa-gun"></i>
                                 <p> Weapon Damage </p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="firerate.php" class="nav-link">
-                                <i class="nav-icon fas fa-cogs"></i>
+                                <i class="nav-icon far fa-dot-circle"></i>
                                 <p> Fire Rate </p>
                             </a>
                         </li>
@@ -130,6 +134,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    <script src="js/design.js"></script>
 </body>
 
 </html>
